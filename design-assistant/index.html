@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Assistant - LLM-powered Framework</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Main App -->
+  <div id="app">
+    <!-- Top Bar -->
+    <header class="top-bar">
+      <div class="top-bar-left">
+        <h1 class="logo">Design Assistant</h1>
+      </div>
+      <div class="top-bar-right">
+        <div class="api-key-header">
+          <label class="api-key-label" for="header-api-key">API Key</label>
+          <input type="password" id="header-api-key" placeholder="sk-ant-..." autocomplete="off" />
+        </div>
+      </div>
+    </header>
+
+    <div class="main-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Modality 1 -->
+        <div class="modality-group">
+          <h3 class="modality-title">Idea Exploration</h3>
+          <button class="component-btn active" data-modality="idea-exploration" data-component="new-ideas">New Ideas</button>
+          <button class="component-btn" data-modality="idea-exploration" data-component="cultural-sensitivities">Cultural Sensitivities</button>
+          <button class="component-btn" data-modality="idea-exploration" data-component="old-ideas">Old Ideas</button>
+          <button class="component-btn" data-modality="idea-exploration" data-component="competition">Competition</button>
+        </div>
+
+        <!-- Modality 2 -->
+        <div class="modality-group">
+          <h3 class="modality-title">Crafting Dialogue</h3>
+          <button class="component-btn" data-modality="crafting-dialogue" data-component="clarifying-ambiguities">Clarifying Ambiguities</button>
+          <button class="component-btn" data-modality="crafting-dialogue" data-component="ethical-dilemmas">Ethical Dilemmas</button>
+          <button class="component-btn" data-modality="crafting-dialogue" data-component="designers-block">Designer's Block</button>
+        </div>
+
+        <!-- Modality 3 -->
+        <div class="modality-group">
+          <h3 class="modality-title">Design Evaluation</h3>
+          <button class="component-btn" data-modality="design-evaluation" data-component="engaging-directly">Engaging Directly</button>
+          <button class="component-btn" data-modality="design-evaluation" data-component="design-critique">Design Critique</button>
+          <button class="component-btn" data-modality="design-evaluation" data-component="comparative-analysis">Comparative Analysis</button>
+          <button class="component-btn" data-modality="design-evaluation" data-component="dark-patterns">Dark Patterns</button>
+        </div>
+      </aside>
+
+      <!-- Chat Area -->
+      <main class="chat-area">
+        <div class="chat-header">
+          <div>
+            <span id="current-modality" class="chat-modality-label">Idea Exploration</span>
+            <h2 id="current-component">New Ideas</h2>
+          </div>
+          <p id="component-description" class="component-desc">Generate innovative design ideas by exploring diverse sources of inspiration.</p>
+        </div>
+
+        <div id="chat-messages" class="chat-messages">
+          <div class="welcome-message">
+            <p>Select a component from the sidebar and start chatting. The AI will respond with tailored guidance based on the selected design framework modality.</p>
+          </div>
+        </div>
+
+        <div class="chat-input-area">
+          <textarea id="user-input" placeholder="Describe your design challenge..." rows="1"></textarea>
+          <button id="send-btn" title="Send message">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

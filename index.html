@@ -1,121 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Swaroop Panda</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Georgia', serif;
-      background: #fafaf8;
-      color: #1a1a1a;
-      min-height: 100vh;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="all" href="stylesheet.css"/>
+   <style>
+     body {
+  font-family: "Source Sans 3", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1.2;
+      background: #D8E3E1;
+      color: #1b1b1b;
     }
-
-    header {
-      padding: 3rem 2rem 2rem;
-      max-width: 680px;
-      margin: 0 auto;
-      border-bottom: 1px solid #e0e0d8;
+    h1 {
+      font-weight: 300;
+/*      font-size: 1.8em;*/
+      font-style: bold;
     }
-
-    header h1 {
-      font-size: 1.6rem;
-      font-weight: normal;
-      letter-spacing: -0.01em;
+    h2 {
+      font-weight: 300;
+      font-size: 1.4em;
     }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 0.95rem;
-      color: #666;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+    h3 {
+      font-weight: 400;
+      font-size: 1.2em;
     }
-
-    main {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 2.5rem 2rem 4rem;
+    h4 {
+      font-weight: 400;
+      font-size: 1em;
     }
-
-    .section-label {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #999;
-      margin-bottom: 1.5rem;
+    #pagebox {
+      margin:50px;
+      max-width: 800px;
+      margin: 3% auto;
+      margin-bottom: 10%;
+      padding: 0 1em 0 1em;
     }
-
-    .article-list {
-      list-style: none;
+    #quotebox {
+      background: #f9f9f9;
+      border-left: 10px solid #ccc;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      quotes: "\201C""\201D""\2018""\2019";
     }
-
-    .article-list li {
-      border-bottom: 1px solid #e8e8e2;
+    #quotebox:before {
+      color: #ccc;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
     }
-
-    .article-list li:first-child {
-      border-top: 1px solid #e8e8e2;
+    #quotebox p {
+      display: inline;
     }
-
-    .article-list a {
-      display: block;
-      padding: 1.25rem 0;
-      text-decoration: none;
-      color: inherit;
-      transition: color 0.15s;
+    .slightly-bold {
+      font-weight: 300;
     }
-
-    .article-list a:hover .article-title {
-      color: #0066cc;
+    a {
+      color: #0f3d3a;
     }
-
-    .article-title {
-      font-size: 1.05rem;
-      font-weight: normal;
-      line-height: 1.4;
-      transition: color 0.15s;
-    }
-
-    .article-excerpt {
-      margin-top: 0.35rem;
-      font-size: 0.88rem;
-      color: #777;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.5;
+    a:visited {
+      color: #204946;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Swaroop Panda</h1>
-    <p>Writing on AI, design, and the spaces between.</p>
-  </header>
-  <main>
-    <p class="section-label">Articles</p>
-    <ul class="article-list">
-      <li>
-        <a href="articles/ai-fundamentals.html">
-          <div class="article-title">AI Fundamentals</div>
-          <div class="article-excerpt">Three things run the AI world: data, hardware, and code. Everything else is downstream.</div>
-        </a>
-      </li>
-      <li>
-        <a href="articles/beyond-user-centered-design.html">
-          <div class="article-title">Beyond User-Centered Design</div>
-          <div class="article-excerpt">The user is changing. What happens to a philosophy built around understanding who the user is?</div>
-        </a>
-      </li>
-      <li>
-        <a href="articles/of-course-llms-are-not-people.html">
-          <div class="article-title">Of Course, LLMs Are Not People</div>
-          <div class="article-excerpt">Yes, LLMs aren't people. But it's becoming the laziest criticism in research.</div>
-        </a>
-      </li>
-    </ul>
-  </main>
+<a name="top">
+  <div id="pagebox">
+  <h1>Swaroop Panda</h1>
+
+<a name="researchinterests"></a>
+<p>I am a toolmaker creating epistemic tools: interactive artifacts that expand what people can see, question, and decide with data and AI. I treat interfaces as arguments where design choices shape interpretation, agency, and accountability. I prototype and evaluate systems in real contexts, translating messy human concerns into testable, communicable forms. Across visualization, human-LLM interaction, and speculative design, I focus on making uncertainty legible rather than hidden. The goal is practical clarity: tools that help people reason well, not merely compute faster.</p>
+
+<a name="recentwork"></a>
+<h2>Recent Work</h2>
+   <li>An LLM as your <a href="/design-assistant/">design assistant</a></li>
+   <li>Chart BS <a href="/chartdetector/">Detector</a></li>
+
+<a name="recentwriting"></a>
+<h2>Recent Writing</h2>
+<li>English is the hottest <a href="/writing/english-prototyping.html" target="_blank">Prototyping tool</a></li>
+<li>AI <a href="/writing/ai-fundamentals.html" target="_blank">Fundamentals</a></li>
+<li>Beyond <a href="/writing/beyond-user-centered-design.html" target="_blank">User-Centered Design</a></li>
+<li>Of Course, <a href="/writing/of-course-llms-are-not-people.html" target="_blank">LLMs Are Not People</a></li>
+
+<a name="professionalbio"></a>
+<h2>Professional Bio</h2>
+<p><a href="https://www.linkedin.com/in/swarooppanda/">LinkedIn</a></p>
+
+<a name="contact"><h2>Contact</h2></a>
+<p>Email at swarooppnd at gmail.com is the best way to reach me </p>
+
+</div>
 </body>
 </html>
