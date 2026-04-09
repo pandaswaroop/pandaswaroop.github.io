@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swaroop Panda</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #fafaf8;
+      color: #1a1a1a;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 3rem 2rem 2rem;
+      max-width: 680px;
+      margin: 0 auto;
+      border-bottom: 1px solid #e0e0d8;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      letter-spacing: -0.01em;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #666;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4rem;
+    }
+
+    .section-label {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #999;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-list {
+      list-style: none;
+    }
+
+    .article-list li {
+      border-bottom: 1px solid #e8e8e2;
+    }
+
+    .article-list li:first-child {
+      border-top: 1px solid #e8e8e2;
+    }
+
+    .article-list a {
+      display: block;
+      padding: 1.25rem 0;
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.15s;
+    }
+
+    .article-list a:hover .article-title {
+      color: #0066cc;
+    }
+
+    .article-title {
+      font-size: 1.05rem;
+      font-weight: normal;
+      line-height: 1.4;
+      transition: color 0.15s;
+    }
+
+    .article-excerpt {
+      margin-top: 0.35rem;
+      font-size: 0.88rem;
+      color: #777;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Swaroop Panda</h1>
+    <p>Writing on AI, design, and the spaces between.</p>
+  </header>
+  <main>
+    <p class="section-label">Articles</p>
+    <ul class="article-list">
+      <li>
+        <a href="articles/ai-fundamentals.html">
+          <div class="article-title">AI Fundamentals</div>
+          <div class="article-excerpt">Three things run the AI world: data, hardware, and code. Everything else is downstream.</div>
+        </a>
+      </li>
+      <li>
+        <a href="articles/beyond-user-centered-design.html">
+          <div class="article-title">Beyond User-Centered Design</div>
+          <div class="article-excerpt">The user is changing. What happens to a philosophy built around understanding who the user is?</div>
+        </a>
+      </li>
+      <li>
+        <a href="articles/of-course-llms-are-not-people.html">
+          <div class="article-title">Of Course, LLMs Are Not People</div>
+          <div class="article-excerpt">Yes, LLMs aren't people. But it's becoming the laziest criticism in research.</div>
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
